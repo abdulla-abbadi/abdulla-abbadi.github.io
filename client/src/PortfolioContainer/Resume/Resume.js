@@ -75,7 +75,7 @@ const Resume = (props) => {
   const projectsDetails = [
     {
       title: "Portfolio",
-      duration: { fromDate: "Jan. 2022", toDate: "May. 2022" },
+      duration: { fromDate: "Fab. 2022", toDate: "Apr. 2022" },
       description:
         "Built a personal Portfolio ",
       subHeading: "Technologies Used: React JS, Bootsrap",
@@ -101,7 +101,7 @@ const Resume = (props) => {
 
       <ResumeHeading
         heading={"University at buffalo, Buffalo, New York"}
-        subHeading={"MINORS IN PYSCHOLGY AND BIOLOGICAL SCIENCES"}
+        subHeading={"MINORS IN PSYCHOLOGY AND BIOLOGICAL SCIENCES"}
         fromDate={"2015"}
         toDate={"2017"}
       />
