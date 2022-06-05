@@ -1,4 +1,3 @@
-import { infinity } from 'fontawesome'
 import React from 'react'
 import Typical from 'react-typical'
 import ScrollService from "../../../utilities/ScrollService";
