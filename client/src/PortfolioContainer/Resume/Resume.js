@@ -118,7 +118,8 @@ const Resume = (props) => {
       duration: { fromDate: "Jan. 2022", toDate: "Apr. 2022" },
       description:
         "Collaborated on school project implementing Agile scrum methodology.Developed the project's back-end user functionalities, and also contributed to the profile page front-end.",
-      subHeading: "Technologies Used: React JS, Bootsrap, Nodejs",
+      subHeading:
+        "Technologies Used: Flask, ReactJS, JQuery, Bootstrap4.0, HTML, CSS, and Javascript",
     },
     {
       title: "Real-Time code blog",
@@ -133,7 +134,7 @@ const Resume = (props) => {
       description:
         "Online ecommerce website for exibiting and selling crafts and art work online. Used WhatsApp for orders due to the absence of any online order options in the country and slow internet connections",
       subHeading:
-        "Technologies Used: Python Djnago framework, Vanilla Javascript, jQuery, Bootstrap, CropperJs",
+        "Technologies Used: Python Djnago framework, Django channels, JQuery, Docker, HTML/SCC, and Bootstrap ",
     },
   ];
 

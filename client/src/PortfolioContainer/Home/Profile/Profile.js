@@ -32,11 +32,8 @@ export default function Profile() {
           <div className="profile-detail-role">
             <div className="primary-text profile-role-tagline">
               I'm a Software Developer, knowledgeable in all stages of web
-              development. Competent in both back-end and front-end development.
-              Experienced in the following programming languages and frameworks
-              Python, JavaScript, Java, Django, Flask, and React. Willing to
-              learn new technologies and cooperate to build and maintain working
-              software.
+              development. I'm currently looking forward to working with great
+              teams who are very exciting and fun.
             </div>
           </div>
           <div className="profile-options">
