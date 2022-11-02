@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Typical from "react-typical";
-import axios from "axios"
+import axios from "axios";
 import { toast } from "react-toastify";
 
 import imgBack from "../../../src/images/mailz.jpeg";
@@ -58,9 +58,7 @@ export default function ContactMe(props) {
         setEmail("");
         setMessage("");
       }
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   };
 
   return (
@@ -71,15 +69,18 @@ export default function ContactMe(props) {
           <h2 className="title">
             <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
           </h2>{" "}
-           <a href='https://www.linkedin.com/in/abdulla-abbadi-016777b0/' target='_blank'>
-                  <i className='fa fa-linkedin'></i>
-                </a>
-                <a href='https://github.com/abdulla-abbadi' target='_blank'>
-                  <i className='fa fa-github'></i>
-                </a>
-                <a href='https://twitter.com/BootstrapIi' target='_blank'>
-                  <i className='fa fa-twitter'></i>
-                </a>
+          <a
+            href="https://www.linkedin.com/in/abdulla-abbadi-016777b0/"
+            target="_blank"
+          >
+            <i className="fa fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/abdulla-abbadi" target="_blank">
+            <i className="fa fa-github"></i>
+          </a>
+          <a href="https://twitter.com/BootstrapIi" target="_blank">
+            <i className="fa fa-twitter"></i>
+          </a>
         </div>
         <div className="back-form">
           <div className="img-back">
