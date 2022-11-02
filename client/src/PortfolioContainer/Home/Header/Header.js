@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import {
   TOTAL_SCREENS,
@@ -71,7 +70,7 @@ export default function Header() {
           <FontAwesomeIcon className="header-hamburger-bars" icon={faBars} />
         </div>
         <div className="header-logo">
-          <span>Abbadi</span>
+          <span>Abdulla</span>
         </div>
         <div
           className={

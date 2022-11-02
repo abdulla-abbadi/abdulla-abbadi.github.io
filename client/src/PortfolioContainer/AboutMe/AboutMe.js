@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
@@ -14,14 +14,13 @@ export default function AboutMe(props) {
 
   const SCREEN_CONSTSANTS = {
     description:
-      "Jounior full stack web developer, great grasp of Python django/flask frameworks for backend development. Also, good understanding of Reactjs, Vanilla Javascript and some knowledge of Angularjs for frontend development",
+      "I'm a Software Developer, knowledgeable in all stages of web development. Competent in both back-end and front-end development. Experienced in the following programming languages and frameworks Python, JavaScript, Java, Django, Flask, and React. Willing to learn new technologies and cooperate to build and maintain working software.",
     highlights: {
       bullets: [
-        "Full Stack web development",
-        "Reactjs and vanilla javascript frontend desgin",
-        "Redux for State managment",
-        "Django and django REST backend devlopment",
-        "Familiar with css bootstrap framework"
+        "Full Stack web developer",
+        "Django and Django Rest",
+        "Knowledgeable in HTML, CSS and javascript",
+        "React developer",
       ],
       heading: "Here are a Few Highlights:",
     },
@@ -62,7 +61,7 @@ export default function AboutMe(props) {
                 {" "}
                 Hire Me{" "}
               </button>
-              <a href="abdulla_abbadi.pdf" download="abdulla_abbadi.pdf">
+              <a href="abdull_abbadi.pdf" download="abdull_abbadi.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>

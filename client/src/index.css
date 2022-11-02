@@ -108,15 +108,13 @@ body ::-webkit-scrollbar-thumb {
 
 .primary-btn:hover {
   color: aliceblue;
-  border: 2px solid #ff5823;
+  border: 2px solid var(--light-blue);
   background-color: #1f2235;
 }
 
 .highlighted-btn {
-  color: var(--white);
-
   font-size: 12px;
-  background-color: #ff5823;
+  background-color: var(--light-blue);
 }
 @media only screen and (max-width: 568px) {
   .highlighted-btn {

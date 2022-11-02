@@ -1,13 +1,14 @@
-import React, { useState, useEffect, useRef, createRef } from "react";
+import React, { useState, useEffect } from "react";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./Resume.css";
-import education from "../../assets/Resume/education.svg"
-import workHistory from "../../assets/Resume/work-history.svg"
-import programmingSkills from "../../assets/Resume/programming-skills.svg"
-import projects from "../../assets/Resume/projects.svg"
-import interests from "../../assets/Resume/interests.svg"
+import education from "../../assets/Resume/education.svg";
+import programmingSkills from "../../assets/Resume/programming-skills.svg";
+import projects from "../../assets/Resume/projects.svg";
+import interests from "../../assets/Resume/interests.svg";
+import { youtube } from "fontawesome";
+
 const Resume = (props) => {
   /* STATES */
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
@@ -28,6 +29,20 @@ const Resume = (props) => {
         <div className="resume-main-heading">
           <div className="heading-bullet"></div>
           <span>{props.heading ? props.heading : ""}</span>
+          {props.links
+            ? props.links.map((link) => (
+                <a
+                  href={link.link}
+                  className="link"
+                  key={link.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className={linkTypes[link.type]}></i>
+                </a>
+              ))
+            : ""}
+
           {props.fromDate && props.toDate ? (
             <div className="heading-date">
               {props.fromDate + "-" + props.toDate}
@@ -49,9 +64,8 @@ const Resume = (props) => {
   /* STATIC RESUME DATA FOR THE LABELS*/
   const resumeBullets = [
     { label: "Education", logoSrc: education },
-    { label: "Work History", logoSrc: workHistory},
-    { label: "Programming Skills", logoSrc: programmingSkills },
     { label: "Projects", logoSrc: projects },
+    { label: "Programming Skills", logoSrc: programmingSkills },
     { label: "Interests", logoSrc: interests },
   ];
 
@@ -59,32 +73,66 @@ const Resume = (props) => {
   const programmingSkillsDetails = [
     { skill: "Pyhton", ratingPercentage: 80 },
     { skill: "Python Django", ratingPercentage: 80 },
-    { skill: "Python Flask", ratingPercentage: 70 },
-    { skill: "C", ratingPercentage: 50 },
-    { skill: "C++", ratingPercentage: 50 },
-    { skill: "Core Java", ratingPercentage: 60 },
     { skill: "JavaScript", ratingPercentage: 75 },
-    { skill: "React JS", ratingPercentage: 60 },
-    { skill: "React Native", ratingPercentage: 30 },
-    { skill: "Node JS", ratingPercentage: 60 },
+    { skill: "Python Flask", ratingPercentage: 70 },
+    { skill: "Java", ratingPercentage: 60 },
+    { skill: "ReactJS", ratingPercentage: 60 },
     { skill: "HTML", ratingPercentage: 80 },
     { skill: "CSS", ratingPercentage: 80 },
-    { skill: "Bootstrap", ratingPercentage: 70 },
+    { skill: "C", ratingPercentage: 50 },
   ];
 
+  const linkTypes = {
+    youtube: "fa fa-youtube",
+    gitHub: "fa fa-github",
+    hyperLink: "fa fa-link",
+  };
   const projectsDetails = [
     {
       title: "Portfolio",
-      duration: { fromDate: "Fab. 2022", toDate: "Apr. 2022" },
+      links: [
+        { type: "hyperLink", link: "https://abbadi-portfolio.herokuapp.com/" },
+      ],
+
+      duration: { fromDate: "Jan. 2022", toDate: "Apr. 2022" },
       description:
-        "Built a personal Portfolio ",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+        "Developed a personal Portfolio to present to future employers my experience, skills, and education.",
+      subHeading: "Technologies Used: React JS, Bootsrap, Nodejs",
     },
     {
-      title: "Ecommerce Art and Cafts Website ",
-      duration: { fromDate: "Oct.2021", toDate: "Mar.2022" },
+      title: "e-commerce crafs shop",
+      links: [{ type: "hyperLink", link: "https://www.caveofwishs.com/" }],
+      duration: { fromDate: "Mar.2021", toDate: "Jan.2022" },
       description:
-        "Online ecommerce website for exibiting and selling crafts and art work online. Used WhatsApp for orders due to the absence of any online payment options in the country and slow internet connections",
+        "Online ecommerce website for exibiting and selling crafts and gifts online. Designed use cases to accommodate slow internet connection and offline services.The app helped increase sales by 25%.",
+      subHeading:
+        "Technologies Used: Python Djnago framework, Vanilla Javascript, jQuery, Bootstrap, CropperJs",
+    },
+    {
+      title: "Massive Muscles App",
+      links: [
+        {
+          type: "gitHub",
+          link: "https://github.com/CSE-Courses/course-project-a3-massive-muscles",
+        },
+      ],
+      duration: { fromDate: "Jan. 2022", toDate: "Apr. 2022" },
+      description:
+        "Collaborated on school project implementing Agile scrum methodology.Developed the project's back-end user functionalities, and also contributed to the profile page front-end.",
+      subHeading: "Technologies Used: React JS, Bootsrap, Nodejs",
+    },
+    {
+      title: "Real-Time code blog",
+      links: [
+        {
+          type: "gitHub",
+          link: "https://github.com/wafflez180/CSE312-Web-Apps-Project",
+        },
+        { type: "youtube", link: "https://youtu.be/VgEjhzVwAKs" },
+      ],
+      duration: { fromDate: "Mar.2021", toDate: "Jan.2022" },
+      description:
+        "Online ecommerce website for exibiting and selling crafts and art work online. Used WhatsApp for orders due to the absence of any online order options in the country and slow internet connections",
       subHeading:
         "Technologies Used: Python Djnago framework, Vanilla Javascript, jQuery, Bootstrap, CropperJs",
     },
@@ -101,7 +149,7 @@ const Resume = (props) => {
 
       <ResumeHeading
         heading={"University at buffalo, Buffalo, New York"}
-        subHeading={"MINORS IN PSYCHOLOGY AND BIOLOGICAL SCIENCES"}
+        subHeading={"MINORS IN PYSCHOLGY AND BIOLOGICAL SCIENCES"}
         fromDate={"2015"}
         toDate={"2017"}
       />
@@ -112,39 +160,20 @@ const Resume = (props) => {
         toDate={"2013"}
       />
     </div>,
-
-    /* WORK EXPERIENCE */
-    <div className="resume-screen-container" key="work-experience">
-      <div className="experience-container">
+    /* PROJECTS */
+    <div className="resume-screen-container" key="projects">
+      {projectsDetails.map((projectsDetails, index) => (
         <ResumeHeading
-          heading={"FREELANCE, Aden Yemen"}
-          subHeading={"FULL STACK DEVELOPER"}
-          fromDate={"Oct. 2021"}
-          toDate={"Mar. 2022"}
+          key={index}
+          heading={projectsDetails.title}
+          links={projectsDetails.links}
+          subHeading={projectsDetails.subHeading}
+          description={projectsDetails.description}
+          fromDate={projectsDetails.duration.fromDate}
+          toDate={projectsDetails.duration.toDate}
         />
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Developed an Ecommerce web app for an artist/designer to sell and display his craftworks. 
-          </span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - The App has admin control, where the admin user dynamically adds, modifies and deletes exhibits. 
-          </span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            -  Also, the admin can monitor the app activites and control the contacts info and orders details.{" "}
-          </span>
-        </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-              - <a href='https://www.caveofwishs.com/' target='_blank'> link to project</a>
-           </span>
-        </div>
-      </div>
+      ))}
     </div>,
-
     /* PROGRAMMING SKILLS */
     <div
       className="resume-screen-container programming-skills-container"
@@ -164,20 +193,6 @@ const Resume = (props) => {
       ))}
     </div>,
 
-    /* PROJECTS */
-    <div className="resume-screen-container" key="projects">
-      {projectsDetails.map((projectsDetails, index) => (
-        <ResumeHeading
-          key={index}
-          heading={projectsDetails.title}
-          subHeading={projectsDetails.subHeading}
-          description={projectsDetails.description}
-          fromDate={projectsDetails.duration.fromDate}
-          toDate={projectsDetails.duration.toDate}
-        />
-      ))}
-    </div>,
-
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
@@ -192,7 +207,7 @@ const Resume = (props) => {
   ];
 
   const handleCarousal = (index) => {
-    let offsetHeight = 360;
+    let offsetHeight = 600;
 
     let newCarousalOffset = {
       style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
@@ -211,11 +226,7 @@ const Resume = (props) => {
         }
         key={index}
       >
-        <img
-          className="bullet-logo"
-          src={bullet.logoSrc}
-          alt="B"
-        />
+        <img className="bullet-logo" src={bullet.logoSrc} alt="B" />
         <span className="bullet-label">{bullet.label}</span>
       </div>
     ));
