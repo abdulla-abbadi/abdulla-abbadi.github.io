@@ -7,7 +7,6 @@ import education from "../../assets/Resume/education.svg";
 import programmingSkills from "../../assets/Resume/programming-skills.svg";
 import projects from "../../assets/Resume/projects.svg";
 import interests from "../../assets/Resume/interests.svg";
-import { youtube } from "fontawesome";
 
 const Resume = (props) => {
   /* STATES */
