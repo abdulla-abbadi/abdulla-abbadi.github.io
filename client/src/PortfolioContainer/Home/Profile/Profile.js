@@ -32,8 +32,8 @@ export default function Profile() {
           <div className="profile-detail-role">
             <div className="primary-text profile-role-tagline">
               I'm a Software Developer, knowledgeable in all stages of web
-              development. I'm currently looking forward to working with great
-              teams who are very exciting and fun.
+              development. I'm looking forward to working with great teams who
+              are very excited about their work and fun to work with.
             </div>
           </div>
           <div className="profile-options">

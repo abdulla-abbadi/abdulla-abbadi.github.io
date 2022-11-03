@@ -51,9 +51,9 @@
   justify-content: center;
   box-shadow: 0 1px 0px var(--white);
   border-radius: 50%;
-  height: 380px;
-  width: 80%;
-  margin: 0 12% 0 0;
+  height: 350px;
+  width: 450px;
+  margin: 0 10% 0 0;
 }
 .profile-picture-background {
   height: 92%;
