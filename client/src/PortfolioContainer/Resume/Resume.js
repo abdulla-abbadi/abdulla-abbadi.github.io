@@ -124,17 +124,17 @@ const Resume = (props) => {
     {
       title: "Real-Time code blog",
       links: [
-        {
-          type: "gitHub",
-          link: "https://github.com/wafflez180/CSE312-Web-Apps-Project",
-        },
+        // {
+        //   type: "gitHub",
+        //   link: "https://github.com/wafflez180/CSE312-Web-Apps-Project",
+        // },
         { type: "youtube", link: "https://youtu.be/VgEjhzVwAKs" },
       ],
       duration: { fromDate: "Mar.2021", toDate: "Jan.2022" },
       description:
-        "Online ecommerce website for exibiting and selling crafts and art work online. Used WhatsApp for orders due to the absence of any online order options in the country and slow internet connections",
+        "A real-time blog where users can create posts of code scripts and other users can comment and like in real time using WebSockets",
       subHeading:
-        "Technologies Used: Python Djnago framework, Django channels, JQuery, Docker, HTML/SCC, and Bootstrap ",
+        "Technologies Used: Python Djnago framework, Django channels, JQuery, Docker, HTML/CSS, and Bootstrap ",
     },
   ];
 
