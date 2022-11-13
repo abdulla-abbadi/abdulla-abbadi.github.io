@@ -115,7 +115,7 @@ const Resume = (props) => {
           link: "https://github.com/CSE-Courses/course-project-a3-massive-muscles",
         },
       ],
-      duration: { fromDate: "Jan. 2022", toDate: "Apr. 2022" },
+      duration: { fromDate: "Aug. 2020", toDate: "Des. 2020" },
       description:
         "Collaborated on school project implementing Agile scrum methodology.Developed the project's back-end user functionalities, and also contributed to the profile page front-end.",
       subHeading:
@@ -130,7 +130,7 @@ const Resume = (props) => {
         // },
         { type: "youtube", link: "https://youtu.be/VgEjhzVwAKs" },
       ],
-      duration: { fromDate: "Jan.2021", toDate: "Apr.2022" },
+      duration: { fromDate: "Jan.2020", toDate: "May.2020" },
       description:
         "A real-time blog where users can create posts of code scripts and other users can comment and like in real time using WebSockets",
       subHeading:
