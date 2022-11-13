@@ -130,7 +130,7 @@ const Resume = (props) => {
         // },
         { type: "youtube", link: "https://youtu.be/VgEjhzVwAKs" },
       ],
-      duration: { fromDate: "Mar.2021", toDate: "Jan.2022" },
+      duration: { fromDate: "Jan.2021", toDate: "Apr.2022" },
       description:
         "A real-time blog where users can create posts of code scripts and other users can comment and like in real time using WebSockets",
       subHeading:
