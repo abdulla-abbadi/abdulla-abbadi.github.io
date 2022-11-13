@@ -132,7 +132,7 @@ const Resume = (props) => {
       ],
       duration: { fromDate: "Jan.2020", toDate: "May.2020" },
       description:
-        "A real-time blog where users can create posts of code scripts and other users can comment and like in real time using WebSockets",
+        "Developed and designed a real-time blog where users can create posts of code scripts and other users can comment and like in real time using WebSockets",
       subHeading:
         "Technologies Used: Python Djnago framework, Django channels, JQuery, Docker, HTML/CSS, and Bootstrap ",
     },
