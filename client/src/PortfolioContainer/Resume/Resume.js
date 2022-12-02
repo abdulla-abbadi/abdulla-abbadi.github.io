@@ -103,7 +103,7 @@ const Resume = (props) => {
       links: [{ type: "hyperLink", link: "https://www.caveofwishs.com/" }],
       duration: { fromDate: "Mar.2021", toDate: "Jan.2022" },
       description:
-        "Online ecommerce website for exibiting and selling crafts and gifts online. Designed use cases to accommodate slow internet connection and offline services.The app helped increase sales by 25%.",
+        "Online ecommerce website for exhibiting and selling crafts and gifts online. Designed use cases to accommodate slow internet connection and offline services.The app helped increase sales by 25%.",
       subHeading:
         "Technologies Used: Python Djnago framework, Vanilla Javascript, jQuery, Bootstrap, CropperJs",
     },
