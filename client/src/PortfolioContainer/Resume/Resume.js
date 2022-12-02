@@ -99,7 +99,7 @@ const Resume = (props) => {
       subHeading: "Technologies Used: React JS, Bootsrap, Nodejs",
     },
     {
-      title: "e-commerce crafs shop",
+      title: "E-commerce Crafts Shop",
       links: [{ type: "hyperLink", link: "https://www.caveofwishs.com/" }],
       duration: { fromDate: "Mar.2021", toDate: "Jan.2022" },
       description:
@@ -122,7 +122,7 @@ const Resume = (props) => {
         "Technologies Used: Flask, ReactJS, JQuery, Bootstrap4.0, HTML, CSS, and Javascript",
     },
     {
-      title: "Real-Time code blog",
+      title: "Real-Time Code Blog",
       links: [
         // {
         //   type: "gitHub",
